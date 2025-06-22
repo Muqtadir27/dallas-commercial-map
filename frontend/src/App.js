@@ -45,7 +45,7 @@ function App() {
   const [flyToPos, setFlyToPos] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/dallas-commercial-properties")
+    fetch("https://dallas-commercial-map.onrender.com/api/dallas-commercial-properties")
       .then((res) => res.json())
       .then((data) => {
         setProperties(data.properties || []);
@@ -68,7 +68,6 @@ function App() {
 
   return (
     <div style={{ display: "flex", height: "100vh", width: "100%" }}>
-      
       {/* Sidebar */}
       <div style={{ width: "350px", borderRight: "1px solid #ccc", padding: "10px", overflowY: "auto" }}>
         <h3 style={{ marginTop: 0 }}>Dallas Properties</h3>
