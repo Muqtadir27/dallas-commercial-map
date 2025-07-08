@@ -135,8 +135,9 @@ function App() {
             >
               <strong>{p.address}</strong>
               <br />
-              Year: {p.year_built || "N/A"} | $
-              {p.price ? p.price.toLocaleString() : "N/A"}
+              Year: {p.year_built || "N/A"} | ${p.price ? p.price.toLocaleString() : "N/A"}
+              <br />
+              Rent: ${p.rent ? p.rent.toLocaleString() : "N/A"}
               <br />
               <span
                 style={{
@@ -176,6 +177,8 @@ function App() {
                 Building Size: {Math.round(p.building_size || 0)} sqft
                 <br />
                 Price: ${p.price ? p.price.toLocaleString() : "N/A"}
+                <br />
+                Rent: ${p.rent ? p.rent.toLocaleString() : "N/A"}
               </Popup>
             </Marker>
           ))}
