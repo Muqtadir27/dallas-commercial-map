@@ -6,7 +6,9 @@ import os
 app = Flask(__name__)
 
 # ✅ CORS: Allow your frontend domain
-CORS(app, resources={r"/api/*": {"origins": "https://dallas-map.onrender.com"}})
+CORS(app, resources={r"/api/*": {"origins": [
+    "https://dallas-map.onrender.com", "*"
+]}})
 
 @app.route('/api/dallas-commercial-properties', methods=['GET'])
 def get_predicted_properties():
