@@ -32,7 +32,8 @@ def get_predicted_properties():
                 'year_built': int(row.get('year_built')) if not pd.isna(row.get('year_built')) else 'N/A',
                 'lot_size_sqft': row.get('lot_size_sqft', 'N/A'),
                 'building_size': row.get('building_size', 'N/A'),
-                'price': row.get('Predicted_Zestimate', 'N/A')
+                'price': row.get('Predicted_Zestimate', 'N/A'),
+                'rent': row.get('rent', 'N/A')
             })
 
     return jsonify({'properties': properties})
