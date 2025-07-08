@@ -58,7 +58,7 @@ function App() {
   const [flyToPos, setFlyToPos] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/dallas-commercial-properties")
+    fetch("https://dallas-backend.onrender.com/api/dallas-commercial-properties")
       .then((res) => res.json())
       .then((data) => {
         if (data && data.properties) {
