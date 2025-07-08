@@ -33,7 +33,7 @@ def get_predicted_properties():
                 'lot_size_sqft': row.get('lot_size_sqft', 'N/A'),
                 'building_size': row.get('building_size', 'N/A'),
                 'price': row.get('Predicted_Zestimate', 'N/A'),
-                'rent': row.get('rent', 'N/A')
+                'rent': row.get('Rent', 'N/A')
             })
 
     return jsonify({'properties': properties})
