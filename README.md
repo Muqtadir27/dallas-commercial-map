@@ -86,7 +86,7 @@ Make sure the API endpoint in ***App.js*** points to ***http://localhost:5000/ap
 ---
 ## 📈 Power BI Dashboard
 ### Visuals Created:
-![Image](https://github.com/user-attachments/assets/55f868df-bc19-467e-b5b7-e1d0714de801)
+<img width="1166" height="665" alt="Image" src="https://github.com/user-attachments/assets/feeb81dd-4a43-4ff1-8d1d-73bd3717940d" />
 ### Question Answered	Chart Type
 * What’s the occupancy breakdown of commercial properties?	🥧 Pie Chart         
 * What are the average rents & values by occupancy type?	📊 Bar Chart           
