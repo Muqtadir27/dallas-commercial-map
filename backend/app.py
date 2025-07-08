@@ -6,39 +6,33 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/api/dallas-commercial-properties', methods=['GET'])
-def get_properties():
-    df = pd.read_excel('merged_property_data_cleaned.xlsx', engine='openpyxl')
+def get_predicted_properties():
+    df = pd.read_csv('predicted_property_prices.csv')
 
     properties = []
     for _, row in df.iterrows():
-        lat = row.get('location.latitude')
-        lon = row.get('location.longitude')
+        lat = row.get('latitude')
+        lon = row.get('longitude')
 
         if pd.notna(lat) and pd.notna(lon):
-            # Determine occupancy status
-            absentee = str(row.get('summary.absenteeInd')).strip().upper()
-            if absentee == 'OWNER OCCUPIED':
-                occupancy_status = 'Occupied'
-            elif absentee == 'ABSENTEE OWNER':
-                occupancy_status = 'Vacant'
-            else:
-                occupancy_status = 'Vacant'
-
-            # Area in acres → sqft
-            area_acres = row.get('lot.lotsize1')
-            area_sqft = None
-            if pd.notna(area_acres):
-                area_sqft = area_acres * 43560  # 1 acre = 43,560 sqft
-
-            market_value = row.get('assessment.market.mktttlvalue')
+            # Occupancy status cleanup
+            occupancy_status = 'Unknown'
+            if 'Occupancy_status' in df.columns:
+                occ = str(row.get('Occupancy_status')).strip().lower()
+                if occ == 'occupied':
+                    occupancy_status = 'Occupied'
+                elif occ == 'vacant':
+                    occupancy_status = 'Vacant'
 
             properties.append({
-                'address': row.get('address.oneLine', 'N/A'),
-                'area_sqft': round(area_sqft, 2) if area_sqft else None,
+                'address': row.get('address', 'N/A'),
                 'latitude': lat,
                 'longitude': lon,
-                'market_value': None if pd.isna(market_value) else market_value,
-                'occupancy_status': occupancy_status
+                'occupancy_status': occupancy_status,
+                'year_built': int(row.get('year_built')) if not pd.isna(row.get('year_built')) else 'N/A',
+                'lot_size_sqft': row.get('lot_size_sqft', 'N/A'),
+                'building_size': row.get('building_size', 'N/A'),
+                'price': row.get('Predicted_Zestimate', 'N/A')
             })
 
     return jsonify({'properties': properties})
