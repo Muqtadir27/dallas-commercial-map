@@ -94,13 +94,13 @@ Make sure the API endpoint in ***App.js*** points to ***http://localhost:5000/ap
 ## 📈 Power BI Dashboard
 ### Visuals Created:
 <img width="1166" height="665" alt="Image" src="https://github.com/user-attachments/assets/feeb81dd-4a43-4ff1-8d1d-73bd3717940d" />
-### Question Answered	Chart Type
-* What’s the occupancy breakdown of commercial properties?	🥧 Pie Chart         
-* What are the average rents & values by occupancy type?	📊 Bar Chart           
-* How are properties distributed across latitude/longitude?	🗺️ Map Plot          
-* What is the year-wise trend of property development?	📈 Line/Column Chart          
-* What’s the rent-to-value ratio for each type?	📉 Bar Chart        
-* How do rent, age, and building size correlate to price?	🔄 Scatter Plot             
+### Question Answered	Chart Type              
+* What’s the occupancy breakdown of commercial properties?	🥧 Pie Chart          
+* What are the average rents & values by occupancy type?	📊 Bar Chart                 
+* How are properties distributed across latitude/longitude?	🗺️ Map Plot            
+* What is the year-wise trend of property development?	📈 Line/Column Chart                 
+* What’s the rent-to-value ratio for each type?	📉 Bar Chart         
+* How do rent, age, and building size correlate to price?	🔄 Scatter Plot              
 
 ---
 ## 🧪 Sample API Response
