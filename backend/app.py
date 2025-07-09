@@ -1,11 +1,11 @@
+import pandas as pd
 from flask import Flask, jsonify
 from flask_cors import CORS
-import pandas as pd
 
 app = Flask(__name__)
 
-# ✅ ALLOW ALL ORIGINS DURING TESTING (or specify your frontend domain)
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+# ✅ Allow all origins (ideal for production with React frontend hosted elsewhere)
+CORS(app, supports_credentials=True)
 
 @app.route('/api/dallas-commercial-properties', methods=['GET'])
 def get_predicted_properties():
@@ -40,4 +40,4 @@ def get_predicted_properties():
     return jsonify({'properties': properties})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
