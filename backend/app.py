@@ -3,9 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 
 app = Flask(__name__)
-
-# ✅ Allow all origins for now to make sure it works (you can lock to your domain later)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)  # Allow ALL origins (for Render cross-origin support)
 
 @app.route('/api/dallas-commercial-properties', methods=['GET'])
 def get_predicted_properties():
@@ -40,4 +38,4 @@ def get_predicted_properties():
     return jsonify({'properties': properties})
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True)
