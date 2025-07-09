@@ -94,7 +94,9 @@ Make sure the API endpoint in ***App.js*** points to ***http://localhost:5000/ap
 ## 📈 Power BI Dashboard
 ### Visuals Created:
 <img width="1166" height="665" alt="Image" src="https://github.com/user-attachments/assets/feeb81dd-4a43-4ff1-8d1d-73bd3717940d" />
-### Question Answered	Chart Type              
+
+
+###    Question Answered	Chart Type              
 * What’s the occupancy breakdown of commercial properties?	🥧 Pie Chart          
 * What are the average rents & values by occupancy type?	📊 Bar Chart                 
 * How are properties distributed across latitude/longitude?	🗺️ Map Plot            
@@ -145,8 +147,10 @@ Edit
 ---
 
 ## 🙌 Author
-Mohammed Abdul Muqtadir💙
+Built with 🤍 by Mohammed
 
 ---
 ## ⭐ Star this Repo if You Found it Useful!
-Your support helps me build more open-source data solutions!
+Like the project? Star it ⭐ on GitHub. Got ideas or bugs? Open an issue — contributions are welcome!     
+Your support helps me build more open-source data solutions!   
+🔗 GitHub: [Muqtadir27]([https://github.com/Muqtadi27](https://github.com/Muqtadir27))  
