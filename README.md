@@ -153,4 +153,4 @@ Built with 🤍 by Mohammed
 ## ⭐ Star this Repo if You Found it Useful!
 Like the project? Star it ⭐ on GitHub. Got ideas or bugs? Open an issue — contributions are welcome!     
 Your support helps me build more open-source data solutions!   
-🔗 GitHub: [Muqtadir27]([https://github.com/Muqtadi27](https://github.com/Muqtadir27))  
+🔗 GitHub: [Muqtadi27](https://github.com/Muqtadir27)  
