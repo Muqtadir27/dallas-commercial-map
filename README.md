@@ -31,10 +31,10 @@
 * 📈 Created a professional Power BI dashboard for visual analytics
 ---
 
-## 🚀 Live Demo
-## 📽️ Project Walkthrough
-
-[![Watch Demo](https://cdn.loom.com/sessions/thumbnails/a964ab5e98cb49c9911e080bd9fa93f1-with-play.gif)](https://www.loom.com/share/a964ab5e98cb49c9911e080bd9fa93f1?sid=eaed8261-df65-4093-9bb1-df60122ddc56)
+## 🎬 Live Demo
+* ▶ Prediction
+[](https://github.com/user-attachments/assets/a7a3c2b3-5223-43b8-a590-4bb8a3a15de4)
+* ▶ AfterMath [Click here to watch the demo](https://www.loom.com/share/a964ab5e98cb49c9911e080bd9fa93f1)
 
 ▶️ Click above to watch the full video demo of the Dallas Commercial Property Prediction & Mapping project.
 * 🌐 https://dallas-map.onrender.com	
