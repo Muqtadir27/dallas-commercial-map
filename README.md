@@ -34,10 +34,10 @@
 ## 🎬 Live Demo
 
 [](https://github.com/user-attachments/assets/a7a3c2b3-5223-43b8-a590-4bb8a3a15de4)
-> Demo Video
+> Prediction Video
 
 [](https://github.com/user-attachments/assets/4b02614b-2198-43d1-af73-5e4f083f62d7)
-> Demo Video
+> Final Video
 
 ▶️ Here the official link to Dallas Commercial Property Prediction & Mapping project.
 * 🌐 https://dallas-map.onrender.com	
