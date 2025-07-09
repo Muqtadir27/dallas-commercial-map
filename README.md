@@ -32,11 +32,14 @@
 ---
 
 ## 🎬 Live Demo
-* ▶ Prediction
-[](https://github.com/user-attachments/assets/a7a3c2b3-5223-43b8-a590-4bb8a3a15de4)
-* ▶ AfterMath [Click here to watch the demo](https://www.loom.com/share/a964ab5e98cb49c9911e080bd9fa93f1)
 
-▶️ Click above to watch the full video demo of the Dallas Commercial Property Prediction & Mapping project.
+[](https://github.com/user-attachments/assets/a7a3c2b3-5223-43b8-a590-4bb8a3a15de4)
+> Demo Video
+
+[](https://github.com/user-attachments/assets/4b02614b-2198-43d1-af73-5e4f083f62d7)
+> Demo Video
+
+▶️ Here the official link to Dallas Commercial Property Prediction & Mapping project.
 * 🌐 https://dallas-map.onrender.com	
 ---
 
